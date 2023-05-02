@@ -1,5 +1,3 @@
-
-
 ##Python:  
 
 python -m venv: Creates a virtual environment for a Python project  
@@ -119,3 +117,102 @@ npm outdated --depth=0: Lists outdated dependencies for a Node.js project withou
 npm rebuild: Rebuilds native modules for a Node.js project
 npm search: Searches the npm registry for packages
 npm link --global: Creates a symbolic link between a Node.js project and a global package
+
+Sure, here are 10 more commands for each category:
+
+##Python:
+
+1. python -m venv env_name: Creates a virtual environment with a specific name
+2. python -m py_compile script.py: Compiles a Python script into bytecode
+3. python -m pdb script.py: Runs a Python script with the built-in debugger
+4. python -m coverage run script.py: Measures code coverage for a Python script
+5. python -m http.client: Sends HTTP requests and receives responses programmatically
+6. python -m zipfile -c archive.zip file1 file2: Creates a zip archive containing specified files
+7. python -m sqlite3 db.sqlite: Opens a SQLite database shell
+8. python -m doctest script.py: Runs docstring examples in a Python script
+9. python -m tokenize script.py: Tokenizes a Python script into tokens
+10. python -m hashlib -a password: Generates a hash of a password using a specific algorithm
+
+
+##GitHub:
+
+1. git push --force: Forces a push to a remote repository, overwriting its history
+2. git stash: Temporarily stores changes that are not ready to be committed
+3. git tag: Creates a lightweight tag at the current commit
+4. git blame file.txt: Shows who last modified each line in a file and when
+5. git diff --color-words file.txt: Shows changes for a file, highlighting individual words
+6. git branch -D branch_name: Deletes a local branch that has not been merged
+7. git commit --amend: Edits the previous commit message
+8. git revert commit_hash: Creates a new commit that undoes the changes made by a specific commit
+9. git reflog: Shows a log of all the changes to the HEAD pointer, including deleted commits
+10. git clean -f: Deletes untracked files in the working directory
+
+
+##Google Cloud Platform (GCP):
+
+1. gcloud compute scp file.txt instance-name:/destination/path: Copies a file to a virtual machine instance on GCP
+2. gcloud compute instances start instance-name: Starts a virtual machine instance on GCP
+3. gcloud compute instances stop instance-name: Stops a virtual machine instance on GCP
+4. gcloud compute instances list: Lists all virtual machine instances in a project on GCP
+5. gcloud compute firewall-rules list: Lists all firewall rules for a virtual machine instance on GCP
+6. gcloud container images list-tags gcr.io/project-id/image-name: Lists all tags for a container image in the Google Container Registry
+7. gcloud app browse: Opens a browser to access a deployed Google App Engine application
+8. gcloud app logs tail: Streams logs for a deployed Google App Engine application
+9. gcloud auth revoke: Revokes authentication credentials for a GCP account
+10. gcloud app versions list: Lists all versions of a Google App Engine application
+
+
+##Terraform:
+
+1. terraform graph: Generates a visual graph of Terraform resources and dependencies
+2. terraform state pull: Downloads the current state of Terraform resources as a JSON file
+3. terraform output -json: Outputs Terraform output variables in JSON format
+4. terraform import aws_instance.example i-abcd1234: Imports an existing AWS EC2 instance into Terraform
+5. terraform state mv aws_instance.example aws_instance.new_name: Renames a resource in the Terraform state file
+6. terraform workspace new workspace_name: Creates a new workspace in Terraform
+7. terraform fmt -recursive: Formats all Terraform configuration files in a directory and its subdirectories
+8. terraform taint -module=module_name resource_type.resource_name: Marks a resource instance as tainted in a specific module
+9. terraform state rm module.module_name: Removes all resources in a specific module from the Terraform state file
+10. terraform plan -var-file=vars.tfvars: Generates an execution plan for Terraform using a specific variable file
+
+
+##Kubernetes:
+
+1. kubectl apply --prune -l app=example: Deletes all resources in a Kubernetes cluster that are not defined in the current configuration file and have the label "app=example"
+2. kubectl rollout status deployment/deployment_name: Shows the status of a deployment in a Kubernetes cluster
+3. kubectl rollout pause deployment/deployment_name: Pauses a deployment in a Kubernetes cluster
+4. kubectl rollout resume deployment/deployment_name: Resumes a paused deployment in a Kubernetes cluster
+5. kubectl get pods --sort-by=.metadata.creationTimestamp: Lists all pods in a Kubernetes cluster, sorted by creation time
+6. kubectl top pod pod_name: Shows CPU and memory usage for a pod in a Kubernetes cluster
+7. kubectl label pod pod_name app=example: Adds a label "app=example" to a pod in a Kubernetes cluster
+8. kubectl annotate pod pod_name description="example description": Adds an annotation "description=example description" to a pod in a Kubernetes cluster
+9. kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml: Deploys the Kubernetes dashboard to a cluster
+10. kubectl apply -f pod.yaml --dry-run=client: Checks if a pod can be created in a Kubernetes cluster without actually making changes
+
+
+##Linux:
+
+1. du -h file.txt: Shows the size of a file or directory in a human-readable format
+2. tail -f /var/log/syslog: Continuously displays new log entries in a system log file
+3. find /home/user -name *.txt: Searches for files with a specific name pattern in a directory and its subdirectories
+4. top: Shows CPU and memory usage for all processes running on a Linux system
+5. df -h: Shows the disk usage and available space for all mounted file systems on a Linux system
+6. free -m: Shows the amount of free and used memory on a Linux system
+7. history: Shows a list of commands previously executed in a Linux terminal
+8. locate file.txt: Searches for a file in the Linux system using an indexed database
+9. chown user:group file.txt: Changes the owner and group of a file or directory
+10. ssh user@hostname: Connects to a remote Linux system via SSH
+
+
+##Node.js:
+
+1. npm outdated --depth=1: Lists outdated dependencies for a Node.js project, including only the first-level dependencies
+2. npm run lint: Runs a linter for a Node.js project
+3. npm run watch: Runs a development server that automatically reloads when files change in a Node.js project
+4. npm shrinkwrap: Locks down the version of all dependencies for a Node.js project
+5. npm doctor: Diagnoses and fixes common issues with the Node.js environment and dependencies
+6. npm config set registry https://registry.npmjs.org/: Changes the default registry for the npm client
+7. npm link: Creates a symbolic link between a global package and a local package in a Node.js project
+8. npm run test -- --watch: Runs tests for a Node.js project in watch mode
+9. npm install module-name@version: Installs a specific version of a module in a Node.js project
+10. npm audit: Checks a Node.js project for known vulnerabilities in its dependencies
